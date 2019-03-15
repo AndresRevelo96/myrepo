@@ -10,17 +10,17 @@
           <form name="frm1" action="menu.html" method="post">
 
           <tr>
-            <td ><font face="Arial" color="BLACK">Nombres:</font></td>
-            <td ><input type="text" name= "nom"  required></td >
+            <td ><font face="Arial" color="BLACK">Nombres:</font><font color="codigocolor">*</font></td>
+            <td ><input type="text" name= "nom"  required onKeypress="if(event.KeyCode >45 && event.KeyCode <58) event.returnValue = false;"></td >
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Apellidos:</font><br></td>
+            <td><font face="Arial" color="BLACK">Apellidos:</font><font color="codigocolor">*</font><br></td>
             <td ><input type="text" name= "ape"  required></td>
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Tipo identificacion:</font><br></td>
+            <td><font face="Arial" color="BLACK">Tipo identificacion:</font><font color="codigocolor">*</font><br></td>
             <td><select class="combo" required>
               <option></option>
               <option>T.I.</option>
@@ -32,12 +32,12 @@
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Nro. Identificacion:</font><br></td>
+            <td><font face="Arial" color="BLACK">Nro. Identificacion:</font><font color="codigocolor">*</font><br></td>
             <td ><input type="number" name= "ide"  required></td>
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Genero:</font><br></td>
+            <td><font face="Arial" color="BLACK">Genero:</font><font color="codigocolor">*</font><br></td>
             <td><select class="combo">
               <option></option>
               <option>Masculino</option>
@@ -57,7 +57,7 @@
           </tr>
 
           <tr>
-          <td><font face="Arial" color="BLACK">Departamento nac.:</font><br></td>
+          <td><font face="Arial" color="BLACK">Departamento nac.:</font><font color="codigocolor">*</font><br></td>
           <td><select class="combo">
             <option></option>
             <option>Amazonas</option>
@@ -74,7 +74,7 @@
           </tr>
 
           <tr>
-          <td><font face="Arial" color="BLACK">Ciudad nac.:</font><br></td>
+          <td><font face="Arial" color="BLACK">Ciudad nac.:</font><font color="codigocolor">*</font><br></td>
           <td><select class="combo">
             <option></option>
             <option>Leticia</option>
@@ -91,29 +91,29 @@
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Correo electronico:</font><br></td>
+            <td><font face="Arial" color="BLACK">Correo electronico:</font><font color="codigocolor">*</font><br></td>
             <td ><input type="email" id="mail"/></td>
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Contraseña:</font><br></td>
+            <td><font face="Arial" color="BLACK">Contraseña:</font><font color="codigocolor">*</font><br></td>
             <td><input type="password"></td>
           </tr>
 
           <tr>
-            <td><font face="Arial" color="BLACK">Confirmar contraseña:</font><br></td>
+            <td><font face="Arial" color="BLACK">Confirmar contraseña:</font><font color="codigocolor">*</font><br></td>
             <td><input type="password"></td>
           </tr>
 
           <tr>
             <td><font face="Arial" color="BLACK">Foto:</font><br></td>
-            <td ><input type="text" name= "userf"><input type="submit" value="Examinar"></td>
+            <td ><input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple></td>
           </tr>
 	       </form>
 
 		<table>
 		<br>
-		<center><input type="submit" value="Examinar"></center>
+		<center><input type="submit" value="Registrar"></center>
 		</table>
 
 
