@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Calculadora </title>
+  </head>
+<body>
+    <center><b><font face="Times new Roman" size="15" color="BLACK">Calculadora Basica</font></b></center><br><br><br>
+        <table border="0" align="center">
+          <form name="frm1" action="calculadora.php" method="post">
+            <tr>
+              <td ><font face="Arial" color="BLACK">Digite 1mer numero:</font><font color="codigocolor">*</font></td>
+              <td ><input type="number" name= "num1"  required onKeypress="if(event.KeyCode >45 && event.KeyCode <58) event.returnValue = false;"></td >
+            </tr>
+
+            <tr>
+              <td><font face="Arial" color="BLACK">Digite 2do numero:</font><font color="codigocolor">*</font><br></td>
+              <td ><input type="number" name= "num2"  required></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <center>
+              <td align=center><select name="operar">
+                <option value="0">Seleccionar</option>
+                <option value="1">Sumar</option>
+                <option value="2">Restar</option>
+                <option value="3">Multiplicar</option>
+                <option value="4">Dividir</option>
+                <option value="5">Potencia(Cada Nro)</option>
+                <option value="6">Raiz cuadrada(Cada Nro)</option>
+                <option value="7">Todas las operaciones</option>
+              </select></td>
+            </center>
+            </tr>
+            </table>
+          <table border="0" align="center">
+            <center><input type="submit" value="Calcular"></center>
+          </form>
+            </table>
+</body>
+
+</html>
