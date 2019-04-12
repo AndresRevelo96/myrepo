@@ -23,7 +23,12 @@ while ($i <= 10) {
   }else{
       echo "<td bgcolor='cyan'>". $i. "</td>";
   }
-
+  for ($i = 1; $i <= 10; $i++) {
+    echo ("<td>");
+      $aux = $j*$i;
+    echo "$aux";
+    echo ("</td>");
+  }
   $i++;
 }
 echo "</tr></table>";
